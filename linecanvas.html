@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<canvas id="myCanvas" width="200" height="100"
+	style="border:1px solid #d3d3d3;">
+	Your browser does not support the canvas element.
+	</canvas>
+
+<script>
+
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d");
+	ctx.moveTo(0,0); //moveTo(x,y) - defines the starting point of the line
+	ctx.lineTo(200,100); //lineTo(x,y) - defines the ending point of the line
+	//To actually draw the line, you must use one of the "ink" methods, like stroke().
+	ctx.stroke();
+
+</script>
+
+</body>
+</html>
